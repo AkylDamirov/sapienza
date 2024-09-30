@@ -17,10 +17,11 @@
 # print(func(-3))
 
 # 3. Write a function that gets a value for x as input and returns the value in x of the function
-# f(x) = p^3x^2 − 5x^5r * 1 − x^3 + 2x^2 + 3x^2 − 1
-# def func(x, p, r, beta):
-#     return (p**3) * (x**2) - 5 * (x**(-5 * r)) - x**3 + 2 * (x**2) + beta * (x**2) - 1
+import math
+import numpy
+def func(x):
+    return (numpy.cbrt(x**2 - 5*x) - (math.sqrt((1 - x**3 + 2*x**2) / (3*x**2 - 1)) ** (1/5)))
 
 # (a) Evaluate the above function for the values -2, 1, 75, 3.
-# print(func(-2, 1, 7/5, 3))
+print(func(-2))
 
