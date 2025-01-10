@@ -24,7 +24,9 @@ def palindrome(s):
         return False
     return palindrome(s[1:-1])
 
-print(palindrome('s'))
+# print(palindrome('s'))
+
+
 
 
 
