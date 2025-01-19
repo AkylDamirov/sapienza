@@ -1,6 +1,6 @@
 from images.images import load,save,visd
 def mario_to_luigi():
-    image = load('sample_images/Mario.png')
+    image = load('../sample_images/Mario.png')
     for line in image:
        for i in range(len(line)):
            if line[i] == (227,6, 19): #red pixel

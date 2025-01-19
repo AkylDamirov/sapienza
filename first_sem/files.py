@@ -23,7 +23,7 @@
 
 # ----------------------------------------
 
-file = open('text.txt', 'r', encoding='utf8')
+file = open('../text.txt', 'r', encoding='utf8')
 def func(file):
     number_of_lines = len(file.readlines())
     file.seek(0)
@@ -50,7 +50,7 @@ file.close()
 # ----------------------------------------
 
 def func2(new_name, file):
-    file = open('text.txt', 'r', encoding='utf8')
+    file = open('../text.txt', 'r', encoding='utf8')
     content = file.readlines()
     modified = [line.replace('bitch', '*****') for line in content]
 
