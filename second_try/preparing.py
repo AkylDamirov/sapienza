@@ -132,7 +132,7 @@ Test it by replacing "Python" with "Machine Learning" in sample.txt.
 
 def replace_word(file, old_word, new_word):
     file = open(file, 'r')
-    file2 = open('test_file', 'w')
+    file2 = open('test_file.txt', 'w')
     for j in file.readlines():
         for i in j.split():
             if i == old_word:
@@ -173,7 +173,7 @@ def csv_func(file):
 
 
 
-# file = open('test_file')
+# file = open('test_file.txt')
 # for i in file:
 #     print(i, end='')
 
